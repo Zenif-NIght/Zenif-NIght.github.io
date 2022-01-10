@@ -8,7 +8,12 @@ redirect_from:
   - /about.html
 ---
 
+<!-- gray the screen out with a cite under construction text -->
+<div class="under-construction">
+  <h1>This page is under construction.</h1>
+</div>
 
+<!-- make a dropdown message -->
 
 
 <div class="experience-wrapper">
