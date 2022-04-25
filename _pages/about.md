@@ -25,9 +25,10 @@ Years of experience as a software engineer with a passion for building computer 
         <ul>
           <li>Applied research on JPL’s legged robot LLAMA</li>
           <li>Develop power model for Boston Dynamics legged robot Spot</li>
-          <li>DevelopMLmodelsfromactuatortimeseriesdata,utilizingthedifference</li>
-            in center-of-pressure and leg forces
-            Technologies include:
+          <li>Develop ML models from actuator time series data,utilizing the difference in center-of-pressure and leg forces</li>
+        </ul>
+        <ul>
+          <b>Technologies include:</b>
           <li>Developed ML algorithm for ARL’s LLAMA quadrupedal platform</li>
           <li>LSTM classification and regression predictions on time series data</li>
           <li>Applied transfer learning to a ResNet50 model for terrain power estimation</li>
