@@ -11,70 +11,6 @@ Robotics researcher specialized in both data science applications and robotic in
 
 Years of experience as a software engineer with a passion for building computer vision applications and autonomous systems. Research published in top conferences: IEEE IRC and under review at IEEE IROS. Demonstrate successful research applications by bringing an unique background in mechanical engineering, a passion for robotics, and expertise in computer vision.
 
-<div class="experience-wrapper">
-
-  <div> 
-  <!-- <div onclick="window.open('https://www.youtube.com/watch?v=1jVtbmFw4GM');" style="cursor: pointer;"> -->
-    <div class="company-wrapper clearfix">
-      <div class="experience-title">U.S. Army DEVCOM Army Research Laboratory </div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-      <div class="time">6/21 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-    </div>
-    <div class="job-wrapper clearfix">
-      <div class="experience-title">Research Fellow</div> <!-- JOB TITLE  -->
-      <div class="company-description">
-        <ul>
-          <li>Applied research on JPL’s legged robot LLAMA</li>
-          <li>Develop power model for Boston Dynamics legged robot Spot</li>
-          <li>Develop ML models from actuator time series data,utilizing the difference in center-of-pressure and leg forces</li>
-        </ul>
-        <ul>
-          <b>Technologies include:</b>
-          <li>Developed ML algorithm for ARL’s LLAMA quadrupedal platform</li>
-          <li>LSTM classification and regression predictions on time series data</li>
-          <li>Applied transfer learning to a ResNet50 model for terrain power estimation</li>
-            Achievements include:
-          <li>Published and presented work at IRC 2021 • Second paper under review at IEEE IROS 2022</li>
-            
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="experience-wrapper">
-
-  <div> 
-  <!-- <div onclick="window.open('https://www.youtube.com/watch?v=1jVtbmFw4GM');" style="cursor: pointer;"> -->
-    <div class="company-wrapper clearfix">
-      <div class="experience-title">BRENKMAN & Company</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-      <div class="time">4/18 - 6/1/2021</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-    </div>
-    <div class="job-wrapper clearfix">
-      <div class="experience-title">Software Engineer</div> <!-- JOB TITLE  -->
-      <div class="company-description">
-        <ul>
-          <li>Research and develop manufacturing and
-            process automation systems</li>
-          <li>Software Architecting System Design</li>
-          <li>Vision systems implementation of the
-            openCV Library in visual C++ and Python</li>
-          <li>Supervise the design of TensorFlow Neural
-            Networks for the use of image recognition</li>
-          <li>Utilize the .Net framework in GUI C++
-            programming with web JS App UIs
-            Test algorithms, develop new AWS
-            systems, ensure image measurement accuracy and precision</li>  
-          <li>Prototype manufacturing and testing</li>  
-          <li> Reach out to clients/manufacturers
-            to exchange information, get pricing
-            and answer questions</li>  
-            
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
@@ -87,14 +23,9 @@ Like many other Jekyll-based GitHub Pages templates, academicpages makes you sep
 
 Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html). -->
 
-You made it this far!
 ======
-<!-- show a YouTube video -->
-<div class="embed-container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
-</div>
 
 <!-- show the objFileLoader-master/3dModels.html file -->
 <div>
-<iframe src="/objFileLoader-master/3dModels.html" width="100%" height="600px" frameborder="0"></iframe> 
+<iframe src="/objFileLoader-master/3dModels.html" width="100%" height="600px" frameborder="10"></iframe> 
 </div>
