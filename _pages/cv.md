@@ -32,7 +32,7 @@ redirect_from:
           <li>LSTM classification and regression predictions on time series data</li>
           <li>Applied transfer learning to a ResNet50 model for terrain power estimation</li>
             Achievements include:
-          <li>Published and presented work at IRC 2021 • Second paper under review at IEEE IROS 2022</li>
+          <li>Published and presented work at IRC 2021 • Second paper IRC 2022</li>
             
         </ul>
       </div>
