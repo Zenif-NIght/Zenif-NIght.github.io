@@ -34,18 +34,41 @@ This research area focuses on developing algorithms and methods for robots and a
 This area of research aims to develop robots that can interact and communicate with humans in natural and intuitive ways.
 
 
+## Robots I have worked with
 
-<!-- show the objFileLoader-master/3dModels.html file -->
-<div>
-<iframe src="/objFileLoader-master/3dModels.html" width="90%" height="600px" frameborder="10"></iframe> 
-<!-- center the frame -->
-<style>
-iframe {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-</style>
+### Go1 Robot -- Jun 2021 - Present
+<script defer type="module" src="/assets/URDF_loader/go1_robot.js"></script>
+<div style="display: flex;">
+  <div style="width: 50%;">
+    <!-- Your text content here -->
+    I Work on the Go1 to teach it how to jump walk in snow
+  </div>
+  <div style="width: 50%;">
+    <canvas id="go1_robot_id"></canvas>
+  </div>
+</div>
+
+### Spot Robot -- Jun 2020 - Present
+<script defer type="module" src="/assets/URDF_loader/spot_robot.js"></script>
+<div style="display: flex;">
+  <div style="width: 50%;">
+    <!-- Your text content here -->
+    I Work on the Spot to teach it to detect complex terrain
+  </div>
+  <div style="width: 50%;">
+    <canvas id="spot_robot_id"></canvas>
+  </div>
 </div>
 
 
+
+<style>
+  #robot {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+</style>

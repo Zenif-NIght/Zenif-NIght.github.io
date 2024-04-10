@@ -14,7 +14,14 @@
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
-
+<script type="importmap">
+  {
+    "imports": {
+      "three": "./assets/URDF_loader/three-0.158.0/build/three.module.js",
+      "three/addons/": "./assets/URDF_loader/three-0.158.0/jsm/"
+    }
+  }
+</script>
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 
