@@ -86,7 +86,7 @@ author:
   location         : "USA, Mountain West"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : #"http://yourfullgooglescholarurl.com"
+  googlescholar    : https://scholar.google.com/citations?user=tSvXZcMAAAAJ&hl=en
   email            :
   researchgate     : https://www.researchgate.net/profile/Christopher-Allred # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -113,7 +113,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          :
+  youtube          : "@christophera.7547"
   wikipedia        :
 
 
@@ -146,6 +146,7 @@ exclude:
   - package.json
   - tmp
   - vendor
+  - dockerfile
 keep_files:
   - .git
   - .svn
