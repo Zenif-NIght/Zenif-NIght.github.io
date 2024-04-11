@@ -7,48 +7,48 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hi, I am Christopher, a PhD student robotics researcher at USU. My expertise in both data science and robotic intelligence. With experience as a software engineer, I have a passion for building autonomous systems and computer vision applications. I have worked extensively with both wheeled and dynamic quadruped robots, utilizing ROS autonomous stacks to achieve successful research applications.
+Hi, I am Christopher, a PhD student robotics researcher at USU. My expertise in both data science and robotic intelligence. With experience as a software engineer, I have a passion for building autonomous systems and computer vision applications. I have worked extensively with both wheeled and dynamic quadruped robots to achieve successful research goals.
 
-Through my work, I have had the opportunity to collaborate with talented researchers in the field and present my findings at top conferences such as IEEE IRC. My focus on developing robust systems for robot perception and control has allowed me to contribute to the advancement of the field and develop innovative solutions for complex problems.
-
-My passion for robotics and commitment to advancing the field has driven me to continuously improve my skills and knowledge. I am excited to continue working in this dynamic field and to make significant contributions to the future of robotic intelligence.
-
-## Collaboration
-I believe that working together can bring different perspectives, expertise, and skills to the table, and lead to more robust and well-rounded research. It can also help to expand the scope of research and bring different research communities together to achieve common goals. Therefore, I would like to extend an invitation to collaborate and encourage other researchers to reach out to me for potential collaboration opportunities. 
 ## Research Interests
 
-* ### Robotics control and motion planning: 
-This research area focuses on developing algorithms for robots to move and navigate in their environment, including obstacle avoidance, path planning, and control strategies.
-* ### Autonomous systems and robotics: 
-This research area involves developing autonomous systems, including drones, self-driving cars, and robotic systems that can operate independently and make decisions without human intervention.
-* ### Natural language processing: 
-This research area involves developing algorithms and models for machines to understand and interpret human language, including speech recognition and natural language understanding.
-* ### Bio-inspired robotics: 
-This research area focuses on developing robots that can mimic the movements and behaviors of living organisms, including animals and insects.
-* ### Machine learning and deep learning: 
-These are popular research areas in AI that involve developing algorithms and models that can learn from data and improve performance over time.
-
-* ### Computer vision and perception: 
-This research area focuses on developing algorithms and methods for robots and autonomous systems to perceive, interpret, and understand their environment through visual data.
-* ### Human-robot interaction: 
-This area of research aims to develop robots that can interact and communicate with humans in natural and intuitive ways.
+*  Robotics control and motion planning
+*  Autonomous systems and robotics
+*  Natural language processing
+*  Bio-inspired robotics
+*  Machine learning and deep learning
+*  Computer vision and perception
+*  Human-robot interaction
 
 
 ## Robots I have worked with
 
-### Go1 Robot -- Jun 2021 - Present
+### Go1 -- Jun 2022 - Present
 <script defer type="module" src="/assets/URDF_loader/go1_robot.js"></script>
 <div style="display: flex;">
   <div style="width: 50%;">
     <!-- Your text content here -->
-    I Work on the Go1 to teach it how to jump walk in snow
+    I am working on develping new RL methods for legged robots, the Go1 is the main platform i use. I am looking at how we can inprove  jumping and ability to walk in deep snow
   </div>
   <div style="width: 50%;">
     <canvas id="go1_robot_id"></canvas>
   </div>
 </div>
 
-### Spot Robot -- Jun 2020 - Present
+### DOFbot -- Jan 2022 - March 2022
+<script defer type="module" src="/assets/URDF_loader/dofbot_robot.js"></script>
+<div style="display: flex;">
+  <div style="width: 50%;">
+    <!-- Your text content here -->
+    For the We created a telioperated control system in unity in the span of 24 hours. We use a Oculus to control the robot remotely.
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rrh76Q8C39Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div style="width: 50%;">
+    <canvas id="dofbot_robot_id"></canvas>
+  </div>
+</div>
+
+
+### Spot  -- Jun 2021 - Present
 <script defer type="module" src="/assets/URDF_loader/spot_robot.js"></script>
 <div style="display: flex;">
   <div style="width: 50%;">
@@ -60,7 +60,33 @@ This area of research aims to develop robots that can interact and communicate w
   </div>
 </div>
 
+<!-- link to page for all the publications -->
+[Publications](/publications/)
 
+### LLAMA  -- Jun 2021 - Aug 2021
+
+<div style="display: flex;">
+  <div style="width: 50%;">
+    <!-- Your text content here -->
+   As part of my work with the Army Research Laboratory (ARL) I worked on the Legged Locomotion and Movement Adaptation (LLAMA) robot. I ustalise the joint data to accurately predict the terrain the robot is walking on.
+  </div>
+  <div style="width: 50%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Hm9OMts41TM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+
+* You can find out publication on this work [Improving methods for multi-terrain classification beyond visual perception](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9699886).
+
+### USU Mars Rover  -- Aug 2020 - May 2021
+
+<div style="display: flex;">
+  <div style="width: 50%;">
+    <!-- Your text content here -->
+    I worked on the USU Mars Rover team to develop a robot that can navigate autonomously in a simulated Mars environment. I worked on the computer vision system to detect and avoid obstacles. I also worked on the communication system to allow the robot to communicate with the base station.
+  </div>
+  <div style="width: 50%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/deJiZued-sc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
 
 <style>
   #robot {

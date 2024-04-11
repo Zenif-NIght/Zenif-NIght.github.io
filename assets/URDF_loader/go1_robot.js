@@ -11,7 +11,7 @@ import { URDFLoader } from './URDFLoader.js';
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(80, 1, 0.01, 1000);
 // const camera = new THREE.OrthographicCamera();
-camera.position.set(0.6, 0.2, 0);
+camera.position.set(0.6, 0.3, 0);
 
 const camLookat = new THREE.Vector3(0, 0, 0);
 camera.lookAt(camLookat);
@@ -101,7 +101,7 @@ loader2.load(
     r.position.set(0., 0.2, -0.0);
     console.dir(r);
     // r.children[0].geometry.translate(0, 0.25, 0);
-    r.joints["FR_calf_joint"].setJointValue(-1.5);
+    // r.joints["FR_calf_joint"].setJointValue(-1.5);
     console.dir(r.joints);
     // console.dir();
     scene.add(r);
@@ -117,25 +117,28 @@ loader2.load(
   }
 );
 
-function moveCamera() {
+function moveCamera(event) {
   // scroll-dependent animation
-  let t = document.body.getBoundingClientRect().top;
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+  const windowWidth = window.innerWidth;
+  const windowHeight = window.innerHeight;
+  const normalizedMouseX = (mouseX / windowWidth) * 2 - 1;
+  const normalizedMouseY = (mouseY / windowHeight) * 2 - 1;
   if (robot !== undefined) {
-    // robot.rotation.z = (t - 10) * -0.02;
-    // robot.rotation.z = (t - 10) * -0.01;    
-    robot.rotation.z = (t +100) * -0.01;
-
+    robot.rotation.z = normalizedMouseX * Math.PI / 4;
+    robot.rotation.y = normalizedMouseY * Math.PI / 4;
   }
   
 }
-document.body.onscroll = moveCamera;
+document.body.onmousemove = moveCamera;
 
-console.log(camera.rotation);
+// console.log(camera.rotation);
 function animate() {
   requestAnimationFrame(animate);
   // controls.update();
   renderer.render(scene, camera);
-  const time = Date.now() / 80;
+  const time = Date.now() / 100;
 
   // const offset = 1 * Math.PI / 3;
   const ratio1 = Math.max(0, Math.sin(time + 0));

@@ -118,25 +118,28 @@ loader2.load(
   }
 );
 
-function moveCamera() {
-  // scroll-dependent animation
-  let t = document.body.getBoundingClientRect().top;
+function moveCamera(event) {
+  // mouse position-dependent animation
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+  const windowWidth = window.innerWidth;
+  const windowHeight = window.innerHeight;
+  const normalizedMouseX = (mouseX / windowWidth) * 2 - 1;
+  const normalizedMouseY = (mouseY / windowHeight) * 2 - 1;
   if (robot !== undefined) {
-    // robot.rotation.z = (t - 10) * -0.02;
-    // robot.rotation.z = (t - 10) * -0.01;    
-    robot.rotation.z = (t +100) * -0.01;
-
+    robot.rotation.z = normalizedMouseX * Math.PI / 4;
+    robot.rotation.y = normalizedMouseY * Math.PI / 4;
   }
-  
 }
-document.body.onscroll = moveCamera;
+
+document.body.onmousemove = moveCamera;
 
 console.log(camera.rotation);
 function animate() {
   requestAnimationFrame(animate);
   // controls.update();
   renderer.render(scene, camera);
-  const time = Date.now() / 80;
+  const time = Date.now() / 180;
 
   // const offset = 1 * Math.PI / 3;
   const ratio1 = Math.max(0, Math.sin(time + 0));
@@ -145,16 +148,16 @@ function animate() {
   const ratio4 = Math.max(0, Math.sin(time + (3 * Math.PI / 2)));
   // console.log(ratio);
   if (robot != undefined) {
-    robot.joints["fl_hy"].setJointValue(THREE.MathUtils.lerp(1, 0.5, ratio1));
-    robot.joints["fr_hy"].setJointValue(THREE.MathUtils.lerp(1, 0.5, ratio3));
-    robot.joints["hl_hy"].setJointValue(THREE.MathUtils.lerp(1.2, 0.8, ratio3));
-    robot.joints["hr_hy"].setJointValue(THREE.MathUtils.lerp(1.2, 0.8, ratio1));
+    robot.joints["fl_hy"].setJointValue(THREE.MathUtils.lerp(1  , 0.5, ratio3));
+    robot.joints["fr_hy"].setJointValue(THREE.MathUtils.lerp(1  , 0.5, ratio1));
+    robot.joints["hl_hy"].setJointValue(THREE.MathUtils.lerp(1.2, 0.8, ratio1));
+    robot.joints["hr_hy"].setJointValue(THREE.MathUtils.lerp(1.2, 0.8, ratio3));
 
     robot.joints["fl_kn"].setJointValue(THREE.MathUtils.lerp(-2., -1.2, ratio1));
     robot.joints["fr_kn"].setJointValue(THREE.MathUtils.lerp(-2., -1.2, ratio3));
     robot.joints["hl_kn"].setJointValue(THREE.MathUtils.lerp(-2., -1.2, ratio3));
     robot.joints["hr_kn"].setJointValue(THREE.MathUtils.lerp(-2., -1.2, ratio1));
-    robot.joints["fl_kn"].setJointValue(THREE.MathUtils.lerp(-100, -30, ratio) * DEG2RAD);
+    // robot.joints["fl_kn"].setJointValue(THREE.MathUtils.lerp(-100, -30, ratio) * DEG2RAD);
 
   }
 
