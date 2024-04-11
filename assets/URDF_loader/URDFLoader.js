@@ -2,7 +2,8 @@ import * as THREE from 'three';
 import { STLLoader } from 'three/addons/loaders/STLLoader.js';
 import { ColladaLoader } from 'three/addons/loaders/ColladaLoader.js';
 import { URDFRobot, URDFJoint, URDFLink, URDFCollider, URDFVisual, URDFMimicJoint } from './URDFClasses.js';
-
+import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+console.log(OBJLoader);
 /*
 Reference coordinate frames for THREE.js and ROS.
 Both coordinate systems are right handed so the URDF is instantiated without
@@ -650,12 +651,16 @@ class URDFLoader {
 
             const loader = new ColladaLoader(manager);
             loader.load(path, dae => {
-                // console.log(dae.scene.children)
-                // console.log(dae.scene.children[0].geometry);
                 const daeMesh = dae.scene.children.find((element) => element instanceof THREE.Mesh);
-                // console.log(found);
-                // done(dae.scene);
                 const mesh = new THREE.Mesh(daeMesh.geometry, new THREE.MeshStandardMaterial({color:new THREE.Color( 0xffff00 )}));
+                done(mesh);
+            });
+
+        } else if (/\.obj$/i.test(path)) {
+
+            const loader = new OBJLoader(manager);
+            loader.load(path, obj => {
+                const mesh = new THREE.Mesh(obj.children[0].geometry, new THREE.MeshStandardMaterial({color:new THREE.Color( 0x0000ff )}));
                 done(mesh);
             });
 

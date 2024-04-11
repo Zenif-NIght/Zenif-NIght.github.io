@@ -53,7 +53,7 @@ This area of research aims to develop robots that can interact and communicate w
 <div style="display: flex;">
   <div style="width: 50%;">
     <!-- Your text content here -->
-    I Work on the Spot to teach it to detect complex terrain
+    I work on the  Boston Dynamics Spot to train it to detect complex terrain and cost for the robot to walk on.
   </div>
   <div style="width: 50%;">
     <canvas id="spot_robot_id"></canvas>
