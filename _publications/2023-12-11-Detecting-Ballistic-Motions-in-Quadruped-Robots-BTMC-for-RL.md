@@ -1,0 +1,18 @@
+---
+title: "Detecting Ballistic Motions in Quadruped Robots: A Boosted Tree Motif Classifier for Understanding Reinforcement Learning"
+collection: publications
+permalink: /publication/2023-12-11-Detecting-Ballistic-Motions-in-Quadruped-Robots-BTMC-for-RL
+excerpt: 'Quadrupedal robots require sophisticated algorithms to learn dynamic and ballistic motions, such as jumping. Traditional methods, which often employ Reinforcement Learning (RL), face inherent limitations in identifying the formation of desired actions during training. This study introduces the Boosted Tree Motif Classifier (BTMC), a novel approach designed to accurately detect complex motion patterns, thus facilitating learning dynamic actions in quadrupedal robots. Unlike classical motif search techniques and simple neural networks, which achieved a precision rate of merely 2% and 12%, respectively, in identifying a ”jump” motif, BTMC demonstrated remarkable efficiency with a 96% precision rate. The overall accuracy of BTMC was comparable to other learning approaches developed but superior in capturing essential motifs crucial for dynamic motions. The results highlight BTMC&apos;s potential as an innovative solution in RL-based robotic systems, offering an advancement in robotic locomotion. Our findings open up new avenues for RL&apos;s theoretical and practical applications in robotics.'
+date: 2023-12-11
+venue: '2023 Seventh IEEE International Conference on Robotic Computing (IRC)'
+paperurl: 'https://ieeexplore.ieee.org/abstract/document/10473572'
+citation: 'C. Allred, J. Pusey and M. Harper, &quot;Detecting Ballistic Motions in Quadruped Robots: A Boosted Tree Motif Classifier for Understanding Reinforcement Learning,&quot; 2023 Seventh IEEE International Conference on Robotic Computing (IRC), Laguna Hills, CA, USA, 2023, pp. 143-151, doi: 10.1109/IRC59093.2023.00032.'
+cite_generation: false
+---
+Quadrupedal robots require sophisticated algorithms to learn dynamic and ballistic motions, such as jumping. Traditional methods, which often employ Reinforcement Learning (RL), face inherent limitations in identifying the formation of desired actions during training. This study introduces the Boosted Tree Motif Classifier (BTMC), a novel approach designed to accurately detect complex motion patterns, thus facilitating learning dynamic actions in quadrupedal robots. Unlike classical motif search techniques and simple neural networks, which achieved a precision rate of merely 2% and 12%, respectively, in identifying a ”jump” motif, BTMC demonstrated remarkable efficiency with a 96% precision rate. The overall accuracy of BTMC was comparable to other learning approaches developed but superior in capturing essential motifs crucial for dynamic motions. The results highlight BTMC&apos;s potential as an innovative solution in RL-based robotic systems, offering an advancement in robotic locomotion. Our findings open up new avenues for RL&apos;s theoretical and practical applications in robotics.
+
+[Download paper here](https://ieeexplore.ieee.org/abstract/document/10473572)
+
+### Recommended citation: 
+
+C. Allred, J. Pusey and M. Harper, "Detecting Ballistic Motions in Quadruped Robots: A Boosted Tree Motif Classifier for Understanding Reinforcement Learning," 2023 Seventh IEEE International Conference on Robotic Computing (IRC), Laguna Hills, CA, USA, 2023, pp. 143-151, doi: 10.1109/IRC59093.2023.00032.
