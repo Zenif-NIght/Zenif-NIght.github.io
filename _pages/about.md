@@ -7,7 +7,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hi, I am Christopher, a PhD student robotics researcher at USU. My expertise in both data science and robotic intelligence. With experience as a software engineer, I have a passion for building autonomous systems and computer vision applications. I have worked extensively with both wheeled and dynamic quadruped robots to achieve successful research goals.
+Hi, I am Christopher, a PhD student robotics researcher at USU. My expertise is in both data science and robotic intelligence. With experience as a software engineer, I have a passion for building autonomous systems and computer vision applications. I have worked with both wheeled and dynamic quadruped robots on a range of research projects.
+
 
 ## Research Interests
 
