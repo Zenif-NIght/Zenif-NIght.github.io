@@ -16,3 +16,18 @@ collection: portfolio
 ---
 
 I am working with the Boston Dynamics Spot robot to train it to detect complex terrain and estimate the cost for the robot to walk on different surfaces.
+<script defer type="module" src="{{ base_path }}/assets/URDF_loader/spot_robot.js"></script>
+<div style="display: flex; justify-content: center; align-items: center; ">
+    <canvas id="spot_robot_id"></canvas>
+</div>
+<style>
+    #robot {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+</style>
+    

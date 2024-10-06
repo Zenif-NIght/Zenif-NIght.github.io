@@ -13,7 +13,7 @@ const camera = new THREE.PerspectiveCamera(80, 1, 0.01, 1000);
 // const camera = new THREE.OrthographicCamera();
 // camera.position.set(0.9, 0.9, 0.1);
 // zoomed in
-camera.position.set( 0.6, 0.9, 0.3);
+camera.position.set( 0.5, 0.8, 0.3);
 
 
 const camLookat = new THREE.Vector3(0, 0, 0);

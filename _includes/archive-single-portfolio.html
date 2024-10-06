@@ -55,13 +55,10 @@
     {% endif %}
 
     <!-- if an asset path is present render it using its .js script and id -->
-    {% if post.asset %}
-    <p>Asset was found base_path:  {{ base_path }}</p>
-  
+    {% if post.asset %}  
     <script defer type="module" src="{{ base_path }}/assets/URDF_loader/{{ post.asset }}_robot.js"></script>
-    <div style="display: flex;">
+    <div style="display: flex; justify-content: center; align-items: center; ">
       <canvas id="{{ post.asset }}_robot_id"></canvas>
-
     </div>
   
     <style>
