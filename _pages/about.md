@@ -7,91 +7,122 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hi, I am Christopher, a PhD student robotics researcher at USU. My expertise is in both data science and robotic intelligence. With experience as a software engineer, I have a passion for building autonomous systems and computer vision applications. I have worked with both wheeled and dynamic quadruped robots on a range of research projects.
 
 
-## Research Interests
+# Christopher Allred
 
-*  Robotics control and motion planning
-*  Autonomous systems and robotics
-*  Natural language processing
-*  Bio-inspired robotics
-*  Machine learning and deep learning
-*  Computer vision and perception
-*  Human-robot interaction
+_PhD Candidate, AI Robotics Researcher, Software Engineer, Mechanical EIT_
 
+---
 
-## Robots I have worked with
+Welcome to my website! If your curiosity has brought you here, you're in the right place. I love all things robotics and I'm passionate about developing innovative solutions to complex problems.
 
-### Go1 -- Jun 2022 - Present
-<script defer type="module" src="/assets/URDF_loader/go1_robot.js"></script>
-<div style="display: flex;">
-  <div style="width: 50%;">
-    <canvas id="go1_robot_id"></canvas>
+I am a robotics researcher focused on improving terrain cost estimation and dynamic motion learning for real-world robotic systems. My work emphasizes data-centric approaches to boost the performance and adaptability of legged robots. Explore my projects and research, and hopefully, you'll learn something new about the field of robotics!
+
+<div style="display: flex; justify-content: space-between;">
+  <!-- Go1 Robot -->
+  <div style="flex: 1; padding: 0 10px;">
+    <script defer type="module" src="/assets/URDF_loader/go1_robot.js"></script>
+    <canvas id="go1_robot_id" style="width: 100%; height: 200px;"></canvas>
   </div>
-</div>
-
-### DOFbot -- Jan 2022 - March 2022
-<script defer type="module" src="/assets/URDF_loader/dofbot_robot.js"></script>
-<div style="display: flex;">
-  <div style="width: 50%;">
-    <!-- Your text content here -->
-    For the We created a telioperated control system in unity in the span of 24 hours. We use a Oculus to control the robot remotely.
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rrh76Q8C39Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+  <!-- DOFbot Robot -->
+  <div style="flex: 1; padding: 0 10px;">
+    <script defer type="module" src="/assets/URDF_loader/dofbot_robot.js"></script>
+    <canvas id="dofbot_robot_id" style="width: 100%; height: 200px;"></canvas>
   </div>
-  <div style="width: 50%;">
-    <canvas id="dofbot_robot_id"></canvas>
+  
+  <!-- Spot Robot -->
+  <div style="flex: 1; padding: 0 10px;">
+    <script defer type="module" src="/assets/URDF_loader/spot_robot.js"></script>
+    <canvas id="spot_robot_id" style="width: 100%; height: 200px;"></canvas>
   </div>
 </div>
 
 
-### Spot  -- Jun 2021 - Present
-<script defer type="module" src="/assets/URDF_loader/spot_robot.js"></script>
-<div style="display: flex;">
-  <div style="width: 50%;">
-    <!-- Your text content here -->
-    I work on the  Boston Dynamics Spot to train it to detect complex terrain and cost for the robot to walk on.
-  </div>
-  <div style="width: 50%;">
-    <canvas id="spot_robot_id"></canvas>
-  </div>
-</div>
+## Education
 
-<!-- link to page for all the publications -->
-[Publications](/publications/)
+| **PhD. Computer Science**      | **B.S. Mechanical Engineering** |
+|--------------------------------|--------------------------------|
+| *2021 - 2025*                  | *2016 - 2021*                  |
+| Utah State University          | Utah State University          |
 
-### LLAMA  -- Jun 2021 - Aug 2021
+---
 
-<div style="display: flex;">
-  <div style="width: 50%;">
-    <!-- Your text content here -->
-   As part of my work with the Army Research Laboratory (ARL) I worked on the Legged Locomotion and Movement Adaptation (LLAMA) robot. I ustalise the joint data to accurately predict the terrain the robot is walking on.
-  </div>
-  <div style="width: 50%;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Hm9OMts41TM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-</div>
+## Experience
 
-* You can find out publication on this work [Improving methods for multi-terrain classification beyond visual perception](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9699886).
+### Research Fellow  
+**Army Research Lab (ARL): Computational & Information Sciences Directorate**  
+*June 2021 - Present*
 
-### USU Mars Rover  -- Aug 2020 - May 2021
+- Lead NIVIDA-ARL collaboration, orchestrating objectives and engineering efforts.
+- Developed jumping gaits using reinforcement learning algorithms such as PPO for the Go1 robot in Omniverse Isaac Sim.
+- Developed ML algorithm for ARL's LLAMA quadrupedal platform.
+- LSTM classification (96% accuracy) and regression (25.23W RSMSE) predictions on time series terrain data.
+- Applied transfer learning to a ResNet50 model for terrain power estimation.
 
-<div style="display: flex;">
-  <div style="width: 50%;">
-    <!-- Your text content here -->
-    I worked on the USU Mars Rover team to develop a robot that can navigate autonomously in a simulated Mars environment. I worked on the computer vision system to detect and avoid obstacles. I also worked on the communication system to allow the robot to communicate with the base station.
-  </div>
-  <div style="width: 50%;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/deJiZued-sc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
+**Projects & Technologies:**
 
-<style>
-  #robot {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-</style>
+- [Developed Jumping Reinforcement learning algorithm for Go1 quadruped](https://www.jpl.nasa.gov/robotics-at-jpl/llama)
+- [Created terrain categorization models on JPL's LLAMA](https://www.jpl.nasa.gov/robotics-at-jpl/llama)
+- [Developed power model for Boston Dynamics legged robot Spot](https://youtu.be/5Sx1_3p9bOE)
+
+**Publications:**
+
+- [Detecting Ballistic Motions in Quadruped Robots: A Boosted Tree Motif Classifier for Understanding Reinforcement Learning](https://ieeexplore.ieee.org/document/10473572)
+- [Terrain Dependent Power Estimation for Legged Robots in Unstructured Environment](https://ieeexplore.ieee.org/document/10023912)
+- [Improving Methods for Multi-Terrain Classification Beyond Visual Perception](https://ieeexplore.ieee.org/document/9699886)
+
+---
+
+### Research Assistant  
+**Direct Laboratory, Utah State University**  
+*Aug 2022 - Aug 2023*
+
+- Mentored and supervised undergraduate and master's students.
+- Developed and tested new algorithms for multi-agent robotics teaming research.
+- Detected complex motion patterns in reinforcement learning training in Isaac Gym.
+
+**Publications:**
+
+- [Unknown Building Exploration Simulator (UBES)](https://www.sciencedirect.com/science/article/pii/S2665963823001136)
+- [Divide & Survey: Observability Through Multi-Drone City Roadway Coverage](https://ieeexplore.ieee.org/document/9922207)
+
+---
+
+### Graduate Teaching Assistant  
+**Utah State University**  
+*Aug 2021 - May 2023*
+
+- Intelligent Systems (2023), Multi-Agent Systems (2022), and Modern C++ (2021).
+
+---
+
+### Software Engineer  
+**BRENKMAN & Company**  
+*Mar 2018 - May 2021*
+
+- R&D manufacturing and process automation systems.
+- Architected and built vision control loop systems in C++ and Python.
+- Implemented OpenCV and TensorFlow neural networks for image recognition.
+- Automated metal bending and fabrication systems.
+
+---
+
+## Skills and Hobbies
+
+| **Category**       | **Details**                                                                                           |
+|--------------------|-------------------------------------------------------------------------------------------------------|
+| **Expertise**       | Reinforcement Learning, Legged Robotics, Multi-Agent Teaming                                           |
+| **Languages**       | Python, C++, Linux                                                                                   |
+| **Data Science**    | PyTorch, TensorFlow, CUDA, Scikit-learn                                                               |
+| **Simulation**      | Isaac Sim Omniverse, ParaView, Unity & Unreal, MuJoCo & Gymnasium, SolidWorks (CAD)                   |
+| **Software**        | Docker, OpenCV                                                                                        |
+
+In my free time, I enjoy a mix of hands-on and outdoor activities. I love 3D printing, playing the piano, and spending time camping when I can. I also like experimenting with tech in my home lab, especially running large language models locally.
+
+One of my exciting moments was winning 1st place at Hackathon 2022, where my team and I developed a project that involved teleoperating a robot arm using virtual reality, which was a challenging but rewarding experience.  
+[Hackathon 2022: 1st place project, Teleoperation of robot arm with VR](https://youtu.be/Rrh76Q8C39Y)
+
+---
+
