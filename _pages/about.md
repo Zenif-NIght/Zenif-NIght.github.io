@@ -27,10 +27,6 @@ Hi, I am Christopher, a PhD student robotics researcher at USU. My expertise is 
 <script defer type="module" src="/assets/URDF_loader/go1_robot.js"></script>
 <div style="display: flex;">
   <div style="width: 50%;">
-    <!-- Your text content here -->
-    I am working on develping new RL methods for legged robots, the Go1 is the main platform i use. I am looking at how we can inprove  jumping and ability to walk in deep snow
-  </div>
-  <div style="width: 50%;">
     <canvas id="go1_robot_id"></canvas>
   </div>
 </div>
