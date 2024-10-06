@@ -88,7 +88,7 @@ loader2.packages = {
 let robot;
 loader2.load(
   // '/assets/URDF_loader/spot/urdf/spot.urdf',  
-  'assets/URDF_loader/spot/urdf/spot_converted.urdf',
+  '/assets/URDF_loader/spot/urdf/spot_converted.urdf',
   // 'assets/URDF_loader/go1/urdf/go1_unitree_new.urdf',
 
   r => {
