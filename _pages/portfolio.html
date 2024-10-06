@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "Robots I have worked on"
 permalink: /portfolio/
 author_profile: true
 ---
@@ -8,7 +8,8 @@ author_profile: true
 {% include base_path %}
 
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
+{% assign sorted_portfolio = site.portfolio | sort: 'date' | reverse %}
+{% for post in sorted_portfolio %}
+  {% include archive-single-portfolio.html %}
 {% endfor %}
 
