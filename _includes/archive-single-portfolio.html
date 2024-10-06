@@ -56,27 +56,25 @@
 
     <!-- if an asset path is present render it using its .js script and id -->
     {% if post.asset %}
-      <p>Asset was found base_path:  {{ base_path }}</p>
+    <p>Asset was found base_path:  {{ base_path }}</p>
+  
+    <script defer type="module" src="{{ base_path }}/assets/URDF_loader/{{ post.asset }}_robot.js"></script>
+    <div style="display: flex;">
+      <canvas id="{{ post.asset }}_robot_id"></canvas>
 
-      <script defer type="module" src="{{ base_path }}/assets/URDF_loader/{{ post.asset }}_robot.js"></script>
-      <div style="display: flex;">
-        <div style="width: 50%;">
-          <canvas id="{{ post.asset }}_id"></canvas>
-        </div>
-      </div>
-
-
-      <style>
-        #robot {
-          position: relative;
-          height: 100vh;
-          width: 100vw;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-        }
-      </style>
-        {% endif %}
+    </div>
+  
+    <style>
+      #robot {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+    </style>
+  {% endif %}
 
 
 
