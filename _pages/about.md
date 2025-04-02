@@ -39,14 +39,10 @@ I am a robotics researcher focused on improving terrain cost estimation and dyna
   </div>
 </div>
 
-
+---
+<div>
 <table>
 <tbody>
-<tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
 <td style="text-align: left;">Contact<br />
 Information</td>
 <td style="text-align: left;">https://www.linkedin.com/in/christopher-allred/</td>
@@ -894,4 +890,4 @@ assisting students.</p>
 </tr>
 </tbody>
 </table>
-
+</div>
